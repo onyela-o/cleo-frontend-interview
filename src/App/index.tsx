@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import styled from 'styled-components';
 
-import { ReactComponent as Logo } from '../assets/logo.svg';
 import Input from '../components/Input';
 import { palette } from '../styles';
 
@@ -18,7 +17,6 @@ function App() {
   return (
     <div>
       <StyledHeader>
-        <Logo title="Cleo" />
         <p>Currency Converter</p>
       </StyledHeader>
       <ContentContainer>
