@@ -8,10 +8,11 @@ type InputProps = {
 };
 
 const Input: React.FC<InputProps> = ({ label, onChange, value }) => {
+  const inputId = `${label}-input`;
   return (
     <Container>
-      {label && <StyledLabel>{label}</StyledLabel>}
-      <StyledInput onChange={(e) => onChange(e.target.value)} value={value} />
+      {label && <StyledLabel htmlFor={inputId}>{label}</StyledLabel>}
+      <StyledInput id={inputId} onChange={(e) => onChange(e.target.value)} value={value} />
     </Container>
   );
 };

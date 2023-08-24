@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styled from 'styled-components';
 
-import Input from '../components/Input';
+import Input from '../components/Input/Input';
 import { palette } from '../styles';
 
 function App() {
