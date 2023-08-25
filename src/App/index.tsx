@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Input from '../components/Input/Input';
 import { palette } from '../styles';
 
-function App() {
+const App: React.FC = () => {
   const [amount, setAmount] = useState('');
   const [fromCurrency, setFromCurrency] = useState('');
   const [toCurrency, setToCurrency] = useState('');
@@ -30,7 +30,7 @@ function App() {
       </ContentContainer>
     </div>
   );
-}
+};
 
 const StyledHeader = styled.header`
   height: 280px;
